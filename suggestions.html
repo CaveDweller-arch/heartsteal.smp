@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestions | Eterna Economy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0e1621;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #141c27;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      width: 60px;
+      border-radius: 12px;
+      margin-right: 15px;
+    }
+
+    h1 {
+      color: #007BFF;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    main {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #182231;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      margin-top: 10px;
+      background-color: #0e1621;
+      color: white;
+    }
+
+    button {
+      margin-top: 15px;
+      background-color: #ffc107;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ffcf33;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ffc107;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.back:hover {
+      background-color: #ffcf33;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Eterna Economy</h1>
+      <p>Realistic Economy · PvE · Decorated Spawn</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Got a Suggestion?</h2>
+      <p>We’re always improving Eterna Economy. These suggestions are checked once a month. Tell us what features, ideas, or changes you’d like to see!</p>
+
+      <form action="https://formspree.io/f/xgvppyqk" method="POST">
+        <label for="name">Your Name (optional):</label>
+        <input type="text" id="name" name="name" placeholder="Steve / Alex / etc.">
+
+        <label for="suggestion">Your Suggestion:</label>
+        <textarea id="suggestion" name="suggestion" rows="5" placeholder="Write your suggestion here..." required></textarea>
+
+        <button type="submit">Submit Suggestion</button>
+      </form>
+    </div>
+
+    <a href="eterna.html" class="back">⬅ Back to Home</a>
+  </main>
+</body>
+</html>
+
+

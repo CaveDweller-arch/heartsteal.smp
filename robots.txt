@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cavedweller-arch.github.io/EternaEconomy-Website/sitemap.xml

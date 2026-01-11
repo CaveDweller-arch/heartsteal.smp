@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta name="description" content="Eterna Economy — A Minecraft Survival and Economy Server with realistic prices and immersive gameplay. Join our community!">
+  <meta name="keywords" content="Eterna Economy, Minecraft Server, Economy Server, Survival, Realistic Minecraft, SMP, EternaEconomy, Minecraft Economy">
+  <meta name="author" content="CaveDweller">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Eterna Economy — A Minecraft Survival and Economy Server with realistic prices and immersive gameplay. Join our community!">
+  <meta name="keywords" content="Eterna Economy, Minecraft Server, Economy Server, Survival, Realistic Minecraft, SMP, EternaEconomy, Minecraft Economy">
+  <meta name="author" content="CaveDweller">
+  <meta name="robots" content="index, follow">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eterna Economy — SMP</title>
+  <link rel="icon" href="server-icon.png" />
+  <style>
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-img {
+  width: 200px;   /* make logo bigger */
+  height: auto;
+  border-radius: 20px; /* optional, gives it rounded edges */
+}
+
+    :root{--accent:#E0B11E;--bg:#0f1720;--card:#0f1a24;--muted:#9aa6b2}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial;background:linear-gradient(180deg,#071026 0%, #071828 100%);color:#e6eef6}
+    .wrap{max-width:1100px;margin:28px auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{width:120px;height:120px;border-radius:12px;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,.6)}
+    h1{font-size:100px;margin:0}
+    p.lead{margin:4px 0 0;color:#1e34bb(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-top:20px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;box-shadow:0 8px 30px rgba(2,6,23,.6)}
+
+    .big{padding:28px}
+    .row{display:flex;gap:10px;align-items:center}
+    .btn{background:var(--accent);color:#08121a;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+    .muted{color:var(--muted);font-size:13px}
+
+    .status{display:flex;align-items:center;gap:12px}
+    .dot{width:12px;height:12px;border-radius:50%}
+    .online{background:#31c46f}
+    .offline{background:#e04e3a}
+
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
+    .feat{background:rgba(255,255,255,0.02);padding:8px;border-radius:8px}
+
+    .players{margin-top:12px}
+    .players ul{margin:6px 0;padding-left:18px}
+
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media(max-width:980px){.grid{grid-template-columns:1fr}.logo img{width:56px;height:56px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+  <div class="logo">
+    <img src="Eterna.png">
+    <div>
+      <h1 style="font-size:130%;color:#1e34bb;">Eterna Economy</h1>
+      <p class="lead">Realistic Economy · Decorated Spawn · And More</p>
+    </div>
+  </div>
+  <div style="margin-left:auto;text-align:right;color:#000f67;font-size:200%">
+    <div id="ip" class="muted">
+      IP: <strong id="serverIp">EternaEconomy.aternos.me:13119</strong>
+    </div>
+  </div>
+</header>
+    <div class="grid">
+      <main>
+        <div class="card big">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <div class="row">
+              </div>
+              <h2 style="margin-top:8px">Join the server</h2>
+              <p class="muted">If you want to play (recommended) go to the top-right corner of the page and copy the ip. Then paste it in the ip address and boom! you're in.</p>
+            </div>
+            <div style="text-align:right">
+              <div style="height:8px"></div>
+            </div>
+          </div>
+
+          <div class="players card" style="margin-top:18px">
+            <strong>Players online</strong>
+            <div id="playersCount" class="muted">You can get to know that by joining</div>
+            <ul id="playersList"></ul>
+          </div>
+
+          <section style="margin-top:14px">
+            <h3>About the server</h3>
+            <p class="muted">Eterna Economy is a realistic survival SMP with a realistic economy, claim protection, veinminer, custom weapons, and an immersive spawn.</p>
+
+            <div class="features">
+              <div class="feat">Economy n Shops</div>
+              <div class="feat">Land Claiming</div>
+              <div class="feat">Vein Miner</div>
+              <div class="feat">Tree Feller</div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="card">
+          <h3>Rules</h3>
+          <ol class="muted">
+            <li>No griefing or stealing.</li>
+            <li>No offensive builds or usernames.</li>
+            <li>Respect claims and staff decisions.</li>
+          </ol>
+        </div>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Server Info</h3>
+          <div class="muted">MOTD: <span id="motd">Realism & Economy</span></div>
+          <div style="height:10px"></div>
+          <div style="height:10px"></div>
+          <a href="about.html" class="btn" style="display:block;text-align:center;margin-top:10px">About</a>
+		  <a href="suggestions.html" class="btn" style="display:block;text-align:center;margin-top:10px">Suggestions</a>
+		  <a href="https://discord.gg/wNxXtuyT" class="btn" style="display:block;text-align:center;margin-top:10px">Discord</a>
+		  <a href="https://topg.org/minecraft-servers/server-676834#vote" class="btn" style="display:block;text-align:center;margin-top:10px">Vote on TopG</a>
+        </div>
+
+        
+
+      </aside>
+    </div>
+
+    <footer>Made for Eterna Economy</footer>
+  </div>
+
+  <script>
+    // === CONFIG: change this to your server address ===
+    const SERVER_IP = 'EternaEconomy.aternos.me'; // no port = default
+    const SERVER_PORT = 25565; // if custom, set here
+    // ==================================================
+
+    document.getElementById('serverIp').textContent = SERVER_IP + (SERVER_PORT===25565? '': (':' + SERVER_PORT));
+    document.getElementById('joinBtn').href = `minecraft://${SERVER_IP}:${SERVER_PORT}`;
+    document.getElementById('webPlay').href = `https://play.craft.moe/?server=${SERVER_IP}:${SERVER_PORT}`;
+
+    async function fetchStatus(){
+      try{
+        const res = await fetch(`https://api.mcsrvstat.us/2/${SERVER_IP}`);
+        if(!res.ok) throw 0;
+        const json = await res.json();
+        const online = json.online === true;
+        document.getElementById('statusDot').className = 'dot ' + (online? 'online' : 'offline');
+        document.getElementById('statusMsg').textContent = online? 'Online' : 'Offline';
+        document.getElementById('playersCount').textContent = online? (json.players?.online || 0) : 0;
+        document.getElementById('miniPlayers').textContent = online? `${json.players.online} / ${json.players.max}` : '0 / 0';
+        document.getElementById('motd').textContent = json.motd?.clean?.join(' ') || 'Realism & Economy';
+        const playersList = document.getElementById('playersList'); playersList.innerHTML='';
+        if(online && json.players?.list) json.players.list.forEach(p=>{ const li=document.createElement('li'); li.textContent=p; playersList.appendChild(li)});
+      }catch(e){
+        document.getElementById('statusDot').className='dot offline';
+        document.getElementById('statusMsg').textContent='Offline';
+      }
+    }
+    fetchStatus(); setInterval(fetchStatus,20000);
+
+    // OPTIONAL: placeholder for claimblocks using an external API you may host
+    // document.getElementById('claimblocks').textContent = 'Use plugin placeholder API';
+  </script>
+</body>
+</html>
